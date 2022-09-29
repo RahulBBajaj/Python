@@ -1,0 +1,170 @@
+Q1. Write a program to perform the following using recursive functions. a)Fibonacci of a series b)Factorial of a given number n
+
+def fibonacci(n):
+    if(n == 1):
+        return 0
+    elif(n == 2):
+        return 1
+    return fibonacci(n-1) + fibonacci(n-2)
+
+def factorial(n):
+    if(n==1 or n==0):
+        return 1
+    return n*factorial(n-1)
+    
+n1=eval(input())
+n2=eval(input())
+if(n1<0):
+    print("Please enter a positive integer")
+else:
+    print("Fibonacci sequence:")
+    for i in range(1,n1+1):
+        print(fibonacci(i))
+if(n2<0):
+    print("Sorry,factorial does not exist for negative numbers")
+else:
+    print("The factorial of {} is {}".format(n2,factorial(n2)))
+
+Q2. Write a python function program to calculate power of a number raised to other. E.g.- ab using recursion.
+
+def power(a,b):
+    if b==0:
+        return 1
+
+    return a*power(a,b-1)
+    
+a=eval(input())
+b=eval(input())
+print(power(a,b))
+
+Q3. Write a Python function to reverse words in a string. Call the function in the main program along with the given input to get the output.
+
+def reverse_word(s):
+    return ' '.join(reversed(s.split()))
+    
+s=input()
+print(reverse_word(s))
+
+Q4. Write a function to check whether a number is perfect or not. In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisior, that is, the sum of its positive divisors excluding the number itself(also known as its aliquot sum).
+
+def perf(n):
+    sum=0
+    for i in range(1,n):
+            if n%i==0:
+                sum+=i
+                
+                
+    if sum==n:
+        return 1
+    else:
+         return 0
+            
+n=eval(input())
+if(perf(n)==1):
+    print("{} is a perfect number".format(n))
+else:
+    print("{} is not a perfect number".format(n))
+
+Q5. Write a program to obtain the radius of the circle as a parameter and use three different functions to find the diameter, circumference, and area of the circle.Each function should return the respective values.
+
+def diameter(r):
+    return 2*r
+       
+def circle(r):
+    return 2*3.14*r
+    
+def area(r):
+    return 3.14*(r**2)
+    
+r=eval(input())
+
+print("Diameter of a circle =",end="")
+print("%.2f"%diameter(r))
+print("Circumference of a circle=",end="") 
+print("%.2f"%circle(r))
+print("Area of a circle = ",end="")
+print("%.2f"%area(r))
+
+Q6. Write a program that accepts a string S, and characters c1, c2. Replace character c1 with c2 and c2 with c1 using map() function. Input : S =”callege” c1='a',c2='0'
+
+def replace(s, c1, c2):
+    l=len(s)
+    
+    for i in range(l):
+        if s[i]==c1:
+            s=s[0:i]+c2+s[i+1:]
+            
+        elif s[i]==c2:
+            s=s[0:i]+c1+s[i+1:]
+            
+    return s
+    
+s=str(input())
+c1=str(input())
+c2=str(input())
+print(replace(s,c1,c2))
+
+Q7. Baldwin High School's Best Programmer Contest is organized today and the contest hones the students coding skills by making them solve different challenges.
+
+def check_num(n):
+    sum=0
+    for i in range(1,n):
+        if n%i==0:
+            sum+=i
+            
+    if(sum==n):
+        return 0
+    elif sum<n:
+        return 1
+    else:
+        return -1
+n=eval(input())
+if(check_num(n)==0):
+    print("perfect number")
+elif(check_num(n)==1):
+    print("Deficient number")
+else:
+    print("Abundant number")
+
+Q8. Write a Python function that accepts a string and calculates the number of upper case letters and lower case letters.
+
+def string_test(s):
+    lower=0
+    upper=0
+    for c in s:
+        if c.isupper():
+            upper+=1
+        elif c.islower():
+            lower+=1
+        else:
+            pass
+    print(upper)
+    print(lower)
+    
+s=input()
+string_test(s)
+
+Q9. Swapna is a regular reader of Youth Digest magazine. The magazine has a whole host of fun and interesting facts from around for the youth especially that encourage interactivity and enhances their imagination.
+
+def findvalue(n1,n2):
+    s=0
+    for i in range(0,1000000):
+        if((n2*i+1)%n1==0):
+            a=1
+            return ((n2*i+1)//n1)
+    if s==0:
+        return -1
+n1=int(input())
+n2=int(input())
+print(findvalue(n1,n2))
+
+Q10. Green Wood High School is set to premier a programming tournament for high school-aged math and science students across the country.
+
+import numpy as np
+def fiboLastDigit(n):
+    F=np.matrix([[1,1],[1,0]])
+    n-=1
+    n=((F**n)[0,0])%10
+    return int(n)
+n=int(input())
+print(fiboLastDigit(n))
