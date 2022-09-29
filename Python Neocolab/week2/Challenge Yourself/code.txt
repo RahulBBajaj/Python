@@ -56,3 +56,4 @@ print("{:.2f}".format(m),"%",sep="")
 print("{:.2f}".format(n),"%",sep="")
 print("{:.2f}".format(o),"%",sep="")
 print("{:.2f}".format(p),"%",sep="")
+
