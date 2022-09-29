@@ -1,0 +1,32 @@
+Q1. Birthday Challenge
+
+m=int(input())
+n=int(input())
+print((m*n)-1)
+
+Q2. Food Festival at HillTown
+
+m=int(input())
+n=int(input())
+print((m**2 - n**2))
+
+Q3. The price P of an item is passed as the input.The program must print the value of P,formatting it upto 2 places after decimal point.The output of the program must be "The price is p"
+
+N=float(input())
+print("The price is ",round(N,2))
+
+Q4. In ABC corporation,a program must accept the name of an employee,his age and his salary and print them as output with a line containing 2 asterisks separating them(refer sample input and output)
+
+m=input()
+n=int(input())
+o=float(input())
+print(m)
+print("**")
+print(n)
+print("**")
+print(o)
+
+Q5. Customized Welcome Message
+
+m=input()
+print("Hello",m, "! Welcome to  Pineaxe Event Management System")
