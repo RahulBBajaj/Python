@@ -1,0 +1,94 @@
+Q1. Write a program to find the distance between two points.
+
+x1=float(input())
+y1=float(input())
+x2=float(input())
+y2=float(input())
+d=((x2-x1)**2+(y2-y1)**2)**0.5
+print("{:.2f}".format(d))
+
+Q2. Bala distribute C chocolates to school N students every Friday.The C chocolate are distributed among N students equally and the remaining chocolates R are given back to Bala
+
+As an example if C=100 and N=40,each students receives 2 chocolates and the balance 100-40*2=20 is given back
+
+C=int(input())
+N=int(input())
+d=C%N
+print(d)
+
+Q3. Two numbers A and B which are co-prime to each other are passed as input.The program must print the numbers with a hypen between A and B.
+
+m=int(input())
+n=int(input())
+print(m,"-",n)
+
+Q4. Given 2 numbers N,K print the number after performing left shift of N ,'K' times.
+
+Input Size : 1 <= N, K <= 1000.
+
+N=int(input())
+K=int(input())
+p=N<<K
+print(p)
+
+Q5. Given 2 numbers N,K print the number after performing right shift 'K' times of number N.
+
+Input Size : 1 <= N, K <= 1000.
+
+N=int(input())
+K=int(input())
+p=N>>K
+print(p)
+
+Q6. CALCULATING GAIN PERCENTAGE
+
+A=int(input())
+B=int(input())
+C=int(input())
+D=((C-(A+B))/(A+B))*100
+print("{:.2f}".format(D))
+
+Q7. Kabali is a brave warrior who with his group of young ninjas moves from one place to another to fight against his opponents. Before Fighting he just calculates one thing, the difference between his ninja number and the opponent's ninja number. From this difference he decides whether to fight or not. Kabali's ninja number is never greater than his opponent. The input contains two numbers in every line. These two numbers in each line denotes the number ninjas in Kabali's clan and his opponent's clan . print the difference of number of ninjas between Kabali's clan and his opponent's clan. Each output should be in seperate line.
+
+m=int(input())
+n=int(input())
+if(m<n):
+    d=n-m
+    print(d)
+else:
+    d=m-n
+    print(d)
+
+Q8. Write a program to exchange two variables.
+
+a=int(input())
+b=int(input())
+temp=a
+a=b
+b=temp
+print(a,b)
+
+Q9. Event Details
+
+Be it a last minute get together, a birthday party or corporate events, the "Pine Tree" Event Management Company helps you plan and execute it better and faster. Nikhil, the founder of the company wanted the Pineaxe Event Management System to get and display the event details from his Customers for every new order of the Company.
+
+a=input()
+b=input()
+c=int(input())
+d=input()
+e=float(input())
+print("Event Name :",a)
+print("Event Type :",b)
+print("Expected Count :",c)
+print("Paid Entry :",d)
+print("Projected Expense :",round(e,1),"L")
+
+Q10. How many possible ways are to shuffle given number of playing cards?.
+
+Input Size : |N| <= 1000000.
+
+a=int(input())
+f=1
+for i in range(1,a+1):
+    f*=i
+print(f)
