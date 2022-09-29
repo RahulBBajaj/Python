@@ -1,0 +1,98 @@
+Q1. Anbu runs a shop near a school and hence sells a lot of pencils. Anbu wants to write a program to find the number of pencils sold every day. The program will accept the number of pencils at N at the beginning of the day and the number of pencils at E at the end of the day(N>=E). The program must print the number of pencils sold on that particular day.
+
+N=int(input())
+O=int(input())
+print(N-O)
+
+Q2. Write a program to read a float value and round it off to two decimal places.
+
+N=float(input())
+print(round(N,2))
+
+Q3. Write a program to read a decimal value and print it.
+
+N=float(input())
+print(N)
+
+Q4. This code is supposed to take two numbers, divide one by another so that the result is equal to 1, and display the result on the screen. Unfortunately, there is an error in the code. Find the error and fix it, so that the output is correct.
+
+numerator = 10
+denominator = 10
+result = numerator / denominator
+print(result)
+
+Q5. Perform the task given in program comments.
+
+print('If you want to shine like a sun first burn like a sun')
+
+Q6. The length l and breadth b of a rectangle as passed as input.The program must calculate the perimeter of the rectangle and print the perimeter as the output.Both L and B are positive integers.
+
+L=int(input())
+B=int(input())
+Perimeter = 2*(L+B)
+print(Perimeter)
+
+Q7. Write a program to read a number and print it.
+
+N=int(input())
+print(N)
+
+Q8. Perform the task given in program comments.
+
+distance=245
+time=8
+speed= distance/time
+print(round(speed,2))
+
+Q9. Fill in the blanks so that the code prints 
+
+Output: Arise awake and stop not till the goal is reached
+
+word1 = " Arise"
+word2 = " stop not "
+word3 = " goal is "
+print(word1, " awake and", word2, "till the", word3, "reached")
+
+Q10. Write a python program to calculate the product of two float values.
+
+A=float(input())
+B=float(input())
+print(A*B)
+
+Q11. Combine the variables to display the sentence "How do you like Python so far?"
+
+word1 = "How"
+word2 = "do"
+word3 = "you"
+word4 = "like"
+word5 = "Python"
+word6 = "so"
+word7 = "far?"
+print(word1, word2, word3, word4, word5, word6, word7, )
+
+Q12. Write a Python script that outputs "Learning Python is fun!" to the screen.
+
+print("Learning Python is fun")
+
+Q13. Write a program to read a string and print it.
+
+N=input()
+print(N)
+
+Q14. Given the below string,
+
+Twinkle, twinkle, little star.How I wonder what you are.Up above the world so high.Like a diamond in the sky.
+
+
+Write a python program to print each sentence in a new line.
+
+Refer to Sample output for better understanding.
+
+print("Twinkle, twinkle, little star.")
+print("How I wonder what you are.")
+print("Up above the world so high.")
+print("Like a diamond in the sky.")
+
+Q15. This code is supposed to display "2 + 2 = 4" on the screen, but there is an error. Find the error in the code and fix it, so that the output is correct.
+
+print("2 + 2 = 4")
