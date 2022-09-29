@@ -168,3 +168,4 @@ def fiboLastDigit(n):
     return int(n)
 n=int(input())
 print(fiboLastDigit(n))
+
