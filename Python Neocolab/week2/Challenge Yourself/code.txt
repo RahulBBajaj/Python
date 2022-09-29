@@ -1,0 +1,58 @@
+Q1. Talent Show
+
+Mountain View Middle School is all set for organizing their elaborate talent show event of the year, "Stars Onstage". It is a fun-filled event for the students to showcase and build their confidence.
+
+x=int(input())
+print(x*3)
+
+Q2. Trade Fair
+
+Trade Fairs are important for companies to present their products and to get in touch with their customers and business parties. One such grandeur Trade Fair Event was organized by the Confederation of National Large Scale Industry.
+
+n=int(input())
+a=int(n/3.5)
+b=int(2*a)
+c=int(a/2)
+print("Attendees on day 1 :",a)
+print("Attendees on day 2 :",b)
+print("Attendees on day 3 :",c)
+
+Q3. Pranav and Change
+
+N=int(input())
+a=int(N/100)
+N=N%100
+b=int(N/50)
+N=N%50
+c=int(N/10)
+N=N%10
+d=int(N/5)
+N=N%5
+e=int(N/2)
+N=N%2
+f=int(N/1)
+N=N%1
+print(a+b+c+d+e+f)
+
+Q4. Lucky Gifts
+
+N=int(input())
+a=int((N/2)+1)
+print(a)
+
+Q5. Total Expenses for the Event
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+total=a+b+c+d
+m=(a/total)*100
+n=(b/total)*100
+o=(c/total)*100
+p=(d/total)*100
+print("{:.2f}".format(total))
+print("{:.2f}".format(m),"%",sep="")
+print("{:.2f}".format(n),"%",sep="")
+print("{:.2f}".format(o),"%",sep="")
+print("{:.2f}".format(p),"%",sep="")
